@@ -1,0 +1,152 @@
+.viewbaseBody{
+    height: 80vh;
+    margin-left: 8vh;
+    margin-right: 8vh;
+    margin-top: 4vh;
+}
+
+.form-control{
+    line-height: 1.1;
+    display: grid;
+    grid-template-columns: 1em auto;
+    gap: 0.5em;
+    margin-bottom: 2vh;
+}
+
+.tituloBase {
+    font-family: 'Tim Sans Bold';
+    font-size: 1.5rem;
+    padding-bottom: 2vh;
+}
+
+.flexHorizontal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 4vh;
+}
+
+.flexHorizontal2{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin-top: 4vh;
+    gap: 1vw
+}
+
+
+.flexHorizontal2 > h4{
+    margin-right: 2vw;
+}
+
+
+.flexVertical{
+    display: flex;
+    flex-direction: column;
+}
+
+.inputExtraLongo{
+    width: 62.2vw;
+    border: 0;
+    border-bottom: 2px solid white;
+    outline: 0;
+    font-size: 1.1rem;
+    color: white;
+    padding: 7px 0;
+    background: transparent;
+}
+
+
+.inputLongo{
+    width: 45.2vw;
+    border: 0;
+    border-bottom: 2px solid white;
+    outline: 0;
+    font-size: 1.1rem;
+    color: white;
+    padding: 7px 0;
+    background: transparent;
+}
+
+.inputMedio{
+    width: 28vw;
+    border: 0;
+    border-bottom: 2px solid white;
+    outline: 0;
+    font-size: 1.1rem;
+    color: white;
+    padding: 7px 0;
+    background: transparent;
+}
+
+.inputMedio2{
+    width: 30vw;
+    border: 0;
+    border-bottom: 2px solid white;
+    outline: 0;
+    font-size: 1.1rem;
+    color: white;
+    padding: 7px 0;
+    background: transparent;
+}
+
+.inputMedio3{
+    width: 38vw;
+    border: 0;
+    border-bottom: 2px solid white;
+    outline: 0;
+    font-size: 1.1rem;
+    color: white;
+    padding: 7px 0;
+    background: transparent;
+}
+
+.inputCurto{
+    width: 14vw;
+    border: 0;
+    border-bottom: 2px solid white;
+    outline: 0;
+    font-size: 1.1rem;
+    color: white;
+    padding: 7px 0;
+    background: transparent;
+}
+
+#Endereco{
+    text-align: center;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    background-color: #2f5181;
+}
+
+.textoEnd{
+    color: #7992b6;
+}
+
+.botaoDia{
+    background-color: white;
+    font-family: 'Tim Sans Bold';
+    color: #2f5181;
+    height: 2.8rem;
+    border-radius: 50%;
+    border: transparent 3px solid;
+    box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    transform: translateY(0);
+    transition: transform 150ms, box-shadow 150ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.botaoDia:hover {
+    box-shadow: rgba(0, 0, 0, .15) 0 3px 9px 0;
+    transform: translateY(-2px);
+    border: rgb(151, 9, 9) 3px solid;
+  }
+  

@@ -1,0 +1,31 @@
+#header {
+  display:flex;
+  padding-top: 3vh;
+  padding-left: 7vh;
+  padding-right: 3vw;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  color: white;
+}
+
+#linkHome{
+  border: 2px solid white;
+  border-radius: 3rem;
+  padding-left: 2vh;
+  padding-right: 2vh;
+  margin-top: 1vh;
+  color:white;
+  text-decoration: none;
+}
+
+#linkHome:hover {
+  box-shadow: rgba(0, 0, 0, .15) 0 3px 9px 0;
+  background-color: white;
+  color: #012169;
+  }
+  
+@media (min-width: 768px) {
+  button {
+    padding: 10px 30px;
+  }
+}

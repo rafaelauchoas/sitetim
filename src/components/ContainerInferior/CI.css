@@ -1,0 +1,23 @@
+.contCI{
+    background-color: white;
+    color: #012169;
+    width: 100vw;
+    height: 17vh;
+    font-family: "TIM Sans Bold";
+    position: absolute;
+    bottom: 0;
+}
+
+#bodyCI{
+    display: flex;
+    width: 100%;
+    padding-left: 5vw;
+    padding-right: 12vw;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.link{
+    text-decoration: none;
+}

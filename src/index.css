@@ -1,0 +1,69 @@
+@font-face {
+  font-family: "TIM Sans";
+  src: url(./assets/fonts/TimSans.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "TIM Sans Bold";
+  src: url(./assets/fonts/TimSansBold.ttf) format("truetype");
+}
+
+:root {
+  font-family: "TIM Sans";
+  line-height: 1.5;
+  font-weight: 400;
+  --primary: unset;
+
+  color-scheme: light dark;
+  color: white;
+  background-color: #012169;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  --scroll-bar-color: #c5c5c5;
+  --scroll-bar-bg-color: #f6f6f6;
+}
+
+::-webkit-scrollbar-corner { background: rgba(0,0,0,0.5); }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  scrollbar-width: thin;
+  scrollbar-color: var(--scroll-bar-color) var(--scroll-bar-bg-color);
+}
+
+*::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--scroll-bar-bg-color);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--scroll-bar-color);
+  border-radius: 20px;
+  border: 3px solid var(--scroll-bar-bg-color);
+}
+
+html, body, #root, #defaultLayout, #guestLayout {
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #7992b6;
+  opacity: 1; /* Firefox */
+}

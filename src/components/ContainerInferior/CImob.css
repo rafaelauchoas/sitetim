@@ -1,0 +1,46 @@
+.contCImob{
+    background-color: white;
+    color: #012169;
+    font-family: "TIM Sans Bold";
+
+}
+
+#bodyCImob{
+    display: flex;
+    /* bottom: 0; */
+    /* flex-direction: row; */
+    /* justify-content: space-between; */
+}
+
+#valorBotMob{
+    font-size: 3vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.containerBotMob{
+    width: 45%;
+    vertical-align: middle; 
+}
+
+#tituloMob{
+    /* padding: 3vh; */
+    /* margin-top: 1vh; */
+    display: flex;
+    width: 100%;
+}
+
+#bottomMob{
+    display: flex;
+    justify-content: space-around;
+    bottom: 0;
+    width: 100%;
+    /* padding: 3vh; */
+}
+
+#hrMob{
+    background-color: #012169;
+    height: 6vh;
+    width: 0.2vw;
+}

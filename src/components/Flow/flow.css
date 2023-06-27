@@ -1,0 +1,10 @@
+.flowBase{
+    display: flex;
+    font-size: 1rem;
+    align-items: center;
+}
+
+.flowBase > span {
+    padding: 1vh;
+}
+

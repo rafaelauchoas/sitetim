@@ -1,0 +1,64 @@
+.contCL{
+    background-color: white;
+    color: #012169;
+    width: 30vw;
+    height: 100vh;
+    font-family: "TIM Sans Bold";
+}
+
+#body{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+#titulo{
+    padding: 3vh;
+    margin-top: 1vh;
+    display: flex;
+    width: 100%;
+    justify-items: center;
+}
+
+#pedido{
+    margin-top: 0.3vh;
+    margin-left: 0.2vw;
+}
+
+#bottom{
+    display: flex;
+    justify-content: space-around;
+    bottom: 0;
+    width: 100%;
+    padding: 3vh;
+}
+
+#hr{
+    background-color: #012169;
+    height: 11vh;
+    width: 0.2vw;
+}
+
+.containerBot{
+    width: 45%;
+}
+
+.tituloLinhas{
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.valorBot{
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+#conteudo{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 80%;
+    overflow-y: auto;
+}

@@ -1,0 +1,71 @@
+#containerPlano {
+    display:flex;
+    padding-top: 3vh;
+    justify-content: space-between;
+    height: 80vh;
+    width: 100vw;
+    flex-direction: column;
+    flex-basis: 100%;
+}
+
+#planoMob{
+    /* display:flex; */
+    padding-right: 3vw;
+    padding-left: 3vw;
+    /* justify-content: space-between;
+    height: 80vh;
+    width: 100vw;
+    flex-direction: column;
+    flex-basis: 100%; */
+}
+
+#imgUm{
+    align-self: center;
+}
+
+#textoPlano{
+    align-self: center;
+    display: flex;
+}
+
+#textoPlano > button {
+    margin: 2vh;
+    margin-top: 1vh;
+    display: flex;
+    border-radius: 3rem;
+    background-color: white;
+    color: #012169;
+    border-width: 0;
+    box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    transform: translateY(0);
+    transition: transform 150ms, box-shadow 150ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+#textoPlano > button:hover {
+    box-shadow: rgba(0, 0, 0, .15) 0 3px 9px 0;
+    transform: translateY(-2px);
+  }
+
+#textoPlano > button > h3 {
+    font-family: 'Tim Sans';
+}
+
+#listaLinhas{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 80%;
+    overflow-y: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+    /* margin-bottom: 2%; */
+}
