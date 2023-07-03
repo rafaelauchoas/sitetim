@@ -19,7 +19,8 @@
     "react-device-detect": "^2.2.3",
     "react-dom": "^18.2.0",
     "react-icons": "^4.9.0",
-    "react-router-dom": "^6.11.2"
+    "react-router-dom": "^6.11.2",
+    "tsc": "^2.0.4"
   },
   "devDependencies": {
     "@types/react": "^18.0.37",
