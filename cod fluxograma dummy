@@ -1,0 +1,45 @@
+# Criando o gráfico principal com dados fictícios (dummies)
+dot = Digraph("Arquitetura", format="png")
+
+# Definição de estilos para diferentes tipos de nós
+node_styles = {
+    "server": {"shape": "box", "style": "filled", "fillcolor": "lightgray"},
+    "application": {"shape": "box", "style": "filled", "fillcolor": "yellow"},
+    "database": {"shape": "box", "style": "filled", "fillcolor": "lightblue"},
+    "script": {"shape": "box", "style": "filled", "fillcolor": "lightgreen"},
+}
+
+# Adicionando as zonas de risco com dados fictícios
+with dot.subgraph(name="cluster_DMZ") as dmz:
+    dmz.attr(label="DMZ - Internet Proxy")
+    dmz.node("1", "Apache Proxy\nWindows Server 2019\n4CPU 12GB", **node_styles["server"])
+
+with dot.subgraph(name="cluster_App") as app_zone:
+    app_zone.attr(label="Internet Apps DMZ", color="green")
+    app_zone.node("2", "CMS Server\nWindows Server 2016\n6CPU 32GB", **node_styles["application"])
+    app_zone.node("3", "Processing Engine\nUbuntu 20.04\n8CPU 64GB", **node_styles["application"])
+
+with dot.subgraph(name="cluster_App_Internal") as internal_app:
+    internal_app.attr(label="Application Layer", color="yellow")
+    internal_app.node("4", "Internal API Gateway\nTomcat 9\nUbuntu 18.04\n2CPU 8GB", **node_styles["server"])
+    internal_app.node("5", "Business Logic Server\nNode.js Express\nCentOS 7\n4CPU 16GB", **node_styles["server"])
+
+with dot.subgraph(name="cluster_Data") as data_zone:
+    data_zone.attr(label="Data Layer", color="blue")
+    data_zone.node("6", "PostgreSQL 14\nProduction DB\nUbuntu 22.04\n8CPU 64GB", **node_styles["database"])
+    data_zone.node("7", "Data Warehouse\nMongoDB Cluster\nRHEL 8CPU 128GB", **node_styles["database"])
+    data_zone.node("8", "NFS Storage\nRAID-10 50TB", **node_styles["database"])
+    data_zone.node("9", "ETL Scripts\nPython/Shell", **node_styles["script"])
+
+# Criando conexões com diferentes estilos
+dot.edge("1", "2", label="HTTPS", color="black")
+dot.edge("1", "3", label="HTTPS", color="black")
+dot.edge("2", "4", label="HTTPS", color="black")
+dot.edge("3", "5", label="HTTPS", color="black")
+dot.edge("5", "7", label="JDBC", color="blue")
+dot.edge("6", "7", label="JDBC", color="blue")
+dot.edge("7", "8", label="Storage Sync", color="red")
+dot.edge("9", "7", label="ETL Process", color="green")
+
+# Gerando a imagem com dados fictícios
+dot.render("/mnt/data/fluxograma_arq_dummy")
