@@ -1,0 +1,37 @@
+Claro! Abaixo está o roteiro em inglês com os dois elementos solicitados: uma introdução geral sobre business requirements e um “Layer Overview” para cada uma das três camadas.
+
+⸻
+
+General Introduction
+
+Business Requirements are detailed descriptions of the needs and expectations from a business perspective that a solution or system must fulfill. These requirements serve as the foundation for defining the functional and non-functional aspects of a solution, ensuring alignment with business objectives and regulatory compliance. In this document, we outline the Business Requirements related to the specific layer of the Bank’s Payment Chain, identifying relevant processes, systems, and functionalities. Each layer will be described in terms of its role in the overall architecture, with a focus on current functionalities, planned changes, and system decommissioning impacts.
+
+The following section provides the Business Requirements for the corresponding layer.
+
+⸻
+
+Layer 1: Payment Channels Layer – Overview
+
+The Payment Channels Layer is responsible for capturing and initiating payment instructions from multiple entry points. These include both Client Channels (such as Internet Banking, Mobile Apps, and Branch Portals) and Legacy Systems. This layer ensures that payment data is collected accurately and forwarded to downstream systems for further processing.
+
+Payment entry points are organized by channel and payment type, with each route having specific characteristics such as interface method (portal, API, file upload), payment category (domestic, international, internal transfers), and associated metadata. Special attention is given to legacy applications such as BVT, which is scheduled for decommissioning; in such cases, business requirements will also cover functionalities outside the core payment flow to ensure a smooth transition.
+
+⸻
+
+Layer 2: Payment Integration Layer – Overview
+
+The Payment Integration Layer serves as the intermediary between the payment channels and the core processing systems. It is responsible for routing, validating, transforming, and enriching payment instructions based on business logic and compliance rules. This layer plays a key role in ensuring payment data integrity, compliance with internal and external regulations, and proper orchestration across various systems.
+
+This layer is structured by integration system, with each component responsible for specific payment flows or services. For legacy systems such as Venus, which are planned for decommissioning, the business requirements will include aspects that extend beyond the payment chain itself, ensuring that all dependent processes are addressed comprehensively.
+
+⸻
+
+Layer 3: Payments Processing Layer – Overview
+
+The Payments Processing Layer is the central core of the payment chain. It manages the execution, settlement, reconciliation, and exception handling of payment transactions. This layer ensures that payments are processed according to the appropriate rulesets and that financial and operational integrity is maintained throughout.
+
+This layer interacts with both internal systems and external financial institutions and plays a critical role in risk management, liquidity tracking, and auditability. Legacy platforms such as BR ODIN, which are undergoing decommissioning, will have detailed business requirements described beyond payment processing alone to capture all necessary operational and regulatory impacts.
+
+⸻
+
+Se quiser, posso te ajudar a montar um modelo de documento completo com seções e exemplos. Deseja isso também?
